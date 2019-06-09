@@ -1,0 +1,26 @@
+{
+  "name": "messenger-bot",
+  "version": "1.0.0",
+  "description": "A messenger bot which take birthday and tell how many days left in your next birthday",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "RaiVaibhav",
+  "license": "ISC",
+  "dependencies": {
+    "botkit": "^0.6.21",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "mongoose": "^5.5.13",
+    "morgan": "^1.9.1",
+    "ngrok": "^3.1.1",
+    "nodemon": "^1.19.1",
+    "winston": "^3.2.1"
+  }
+}
