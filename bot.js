@@ -20,12 +20,15 @@ var webserver = require('./index.js')(facebookController);
 // facebookController.api.messenger_profile.greeting("Welcome to the Test bot");
 // facebookController.api.messenger_profile.get_started("Get Started");
 
-facebookController.hears(['.*'],['message_received','facebook_postback'], function(bot, message) {
+facebookController.hears(['.*'],['message_received','facebook_postback'], async function(bot, message) {
+  if (message.type==="message_received"){
+    await createMessage({id:message.mid, user: message.user, text: message.text, timestamp: message.timestamp});
+  }
   bot.startConversation(message, function(err, convo) {
     
     convo.say('Hey');
     convo.ask('Please tell me your full name.', async function(response, convo) {
-      await createMessage({id:response.mid, user: response.user, text: response.text, timestamp: response.timestamp, question: response.timestamp, question:response.question});
+      await createMessage({id:response.mid, user: response.user, text: response.text, timestamp: response.timestamp, question:response.question});
       askDOB(response, convo);
       convo.next();
     });
