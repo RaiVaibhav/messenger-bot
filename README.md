@@ -62,3 +62,15 @@ Run test of above endpoints
 $ npm test
 
 ```
+
+Demo
+====
+
+- **Show how old are you in days**
+
+- **Else a good bye message**
+
+![record](https://user-images.githubusercontent.com/22278438/59446156-96b33200-8e1e-11e9-9ad4-14011a73f4d5.gif)
+
+
+![Screenshot_2019-06-13-20-47-51-918_com facebook orca](https://user-images.githubusercontent.com/22278438/59446269-cbbf8480-8e1e-11e9-8c1c-8747368d6282.png)
