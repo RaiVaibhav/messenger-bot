@@ -51,3 +51,14 @@ Endpoints
 
 /messages/:messageId - Get and delete single message
 ```
+
+Tests
+=====
+
+Run test of above endpoints
+
+```bash
+
+$ npm test
+
+```

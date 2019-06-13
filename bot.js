@@ -2,7 +2,6 @@ require('dotenv').config()
 let getDays = require('./utils/util');
 let createMessage = require('./utils/createMessage');
 var botkit = require('botkit');
-const Message = require('./models/message.js');
 let winston = require('winston');
 var facebookController = botkit.facebookbot({
   verify_token: process.env.FB_VERIFY_TOKEN,
@@ -79,3 +78,5 @@ facebookController.hears(['.*'],['message_received','facebook_postback'], async 
     };
   });
 });
+
+module.exports = webserver;
